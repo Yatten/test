@@ -1,13 +1,13 @@
-print("Hello World")
-print(11)
-print(1+2+3)
+#print("Hello World")
+#print(11)
+#print(1+2+3)
 
-var1 = "Michael Angelo Mallari"
-print var1
+#var1 = "Michael Angelo Mallari"
+#print var1
 
-num1 = 10
-num2 = 5
-total = num1 + num2
+#num1 = 10
+#num2 = 5
+#total = num1 + num2
 
 #print total
 
@@ -29,7 +29,7 @@ total = num1 + num2
 #response = os.system("ping -c 1 1.1.1.1")
 #print(response)
 
-var = 1
+#var = 1
 #if var == 0:
 #    print("Var is equal to zero")
 #elif var == 1:
@@ -37,12 +37,14 @@ var = 1
 #else:
 #    print("Var is unknown")
 
-
+"""
 import os
 response = os.system("ping -c 1 8.8.8.8")
-response1 = os.system("ping -c 1 8.8.8.4")
+response1 = os.system("ping -c 1 8.8.4.4")
 response2= os.system("ping -c 1 192.168.1.1")
 response2= os.system("ping -c 1 192.168.1.2")
+
+os.system("clear")
 
 if response == 0:
     print("8.8.8.8 : Reachable")
@@ -52,11 +54,11 @@ else:
     print("8.8.8.8 : Unknown Result")
     
 if response1 == 0:
-    print("8.8.8.4 : Reachable")
+    print("8.8.4.4 : Reachable")
 elif response1 == 256:
-    print("8.8.8.4 : Unreachable")
+    print("8.8.4.4 : Unreachable")
 else:
-    print("8.8.8.4 : Unknown Result")
+    print("8.8.4.4 : Unknown Result")
     
 if response2 == 0:
     print("192.168.1.1 : Reachable")
@@ -72,3 +74,10 @@ elif response2 == 256:
     print("192.168.1.2 : Unreachable")
 else:
     print("192.168.1.2 : Unknown Result")
+"""
+
+list1=[1,2,3,4,5,6,7,8,9,10]
+print(list1[-1])
+
+for x in list1:
+    print(x)
