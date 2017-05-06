@@ -74,10 +74,43 @@ elif response2 == 256:
     print("192.168.1.2 : Unreachable")
 else:
     print("192.168.1.2 : Unknown Result")
-"""
+
 
 list1=[1,2,3,4,5,6,7,8,9,10]
 print(list1[-1])
 
 for x in list1:
     print(x)
+
+"""
+
+"""
+import os
+import csv
+
+def ping(ip_address):
+    response = os.system("ping -c 1 {}".format(ip_address))
+    if response == 0:
+        return "Reachable"
+    else:
+        return "Uneachable"
+
+exampleFile = open('ip_list.csv')
+exampleReader = csv.reader(exampleFile)
+exampleData = list(exampleReader)
+for x in exampleData:
+    print("Hostname: {} IP Address: {} Status: {}".format(x[0],x[1],ping(x[1])))
+
+"""
+
+import pexpect
+
+child = pexpect.spawn("telnet 54.199.207.33 32773")
+child.sendline("\r\n")
+child.expect(">")
+child.sendline("conf t")
+child.expect("#")
+child.sendline("hostname R1")
+child.expect("#")
+child.sendline("end")
+child.expect("#")
