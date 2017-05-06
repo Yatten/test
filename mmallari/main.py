@@ -108,7 +108,7 @@ import pexpect
 child = pexpect.spawn("telnet 54.199.207.33 32773")
 child.sendline("\r\n")
 child.expect(">")
-child.sendline("conf t")
+child.sendline("configure terminal")
 child.expect("#")
 child.sendline("hostname R1")
 child.expect("#")
