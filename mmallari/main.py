@@ -1,9 +1,7 @@
-#this is a commit
+print("Hello World")
+print(11)
+print(1+2+3)
 
-#hahahah
+var1 = "Michael Angelo Mallari"
 
-#3rd Commit
-
-#4th Commit
-
-#5th Commit
+print var1
